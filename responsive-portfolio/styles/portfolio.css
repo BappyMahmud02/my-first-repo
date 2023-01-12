@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    font-family: 'open sans', sans-serif;
+
+}
+
+.text-primary{
+    color: #FD6E0A;
+}
+.btn-primary {
+    color: rgb(131, 133, 133);
+    height: 64px;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    border-radius:5px ;
+    background: #FD6E0A;
+
+}
+.header{
+    background: #e9e7e4;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+}
+/* hedear and navigation styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-left: 50px;
+}
+/* banner styles */
+.banner{
+    margin: 0 200px;
+    display: flex;
+    align-items: center;
+}
+.banner-tittle{
+    font-size: 85px;
+    font-weight: 700px;
+
+}
+.banner-sub-tittle{
+    font-weight: 600px;
+     font-size: 45px;
+     margin-bottom: 20px;
+
+
+}
+.banner-description{
+    color: #d3d2d0;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* main section */
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section styles */
+.about{
+    margin-top: 130px;
+    background: #f0efec;
+    padding: 130px 150px;
+    text-align: center;
+}
+.section-tittle{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 35px;
+    
+}
+.section-description{
+    color: #7a7a78;
+    font-size: 18px;
+    margin-bottom: 30px;
+    
+
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .info-tittle{
+    font-size: 20px;
+    color: #080808;
+}
+.info-description{
+    font-weight: 700;
+    font-size: 20px;
+    color: #444343;
+
+}
+/* what i do styels */
+
+.what-i-do{
+    margin-top: 130px;
+    
+    
+
+}
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+.skill{
+    background: #f8f8f8;
+    box-shadow: opx 6px 50px rgb(110, 110, 110);
+    border-radius: 5px;
+    padding: 30px;
+    
+    
+}
+.skill-tittle{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.skill-description{
+    color: #686866;
+}
+/* Resume styles */
+
+
+.section-tittle{
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+.resume-content{
+    display: flex;
+    gap: 24px;
+    
+}
+.resume-tittle{
+    background-color: #a89d95;
+    
+}
+.resume-item{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.resume-item .tittle{
+    font-weight: 700;
+    font-size: 25px;
+    color: #cc1818;
+    margin-bottom: 15px;
+    
+
+}
+.resume .sub-tittle{
+    color:#686866 ;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.resume .description{
+    color: #686866;
+}
+
+.resume-button{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* contact styles */
+.contact .section-tittle{
+    text-align: left;
+}
+.contact{
+    display: flex;
+    gap: 100px;
+    background: #f7f7f4;
+    padding: 50px 200px;
+}
+.contact input[type="text"], input[type="email"] textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+input{
+    height: 20px;
+    border-radius: 30px;
+}
+.contactn a{
+    text-decoration: none;
+}
+
+/* responsive styles */
+
+@media screen and (max-width:576px) {
+    nav,.banner,.skills-container, .resume-content,.about-info-container, .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .about, .contact{
+        padding: 20px;
+
+    }
+    .contact input[type="text"], input[type="email"] textarea{
+        padding:0;
+    }
+}
+@media screen and(min-width:577px) and (max-width:992px) {
+    .about, .contact{
+        padding: 20px;
+
+    }
+    .contact input[type="text"], input[type="email"] textarea{
+        padding:0;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+}
